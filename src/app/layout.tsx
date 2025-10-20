@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,10 +24,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="de">
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <title>Rohrritter Minden - Kanal- & Rohrreinigung</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <meta name="description" content="Professionelle Rohrreinigungsdienste – 24 Stunden am Tag, 7 Tage die Woche verfügbar" />
+        <meta name="keywords" content="Rohrreinigung, Kanalreinigung, Notdienst, Minden, Sanitär, 24h Service, Küchenabfluss reinigen, Toilette verstopft, Notdienst, Kanal-TV-Untersuchung" />
+        <meta property="og:title" content="Rohrritter Minden - Kanal- & Rohrreinigung" />
+        <meta property="og:description" content="Professionelle Rohrreinigungsdienste – 24 Stunden am Tag, 7 Tage die Woche verfügbar" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="de_DE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
