@@ -1,21 +1,23 @@
 export default function Home() {
   return (
     <>
-     {/*  <div className="w-full flex justify-end pt-24 bg-transparent relative">
+      <div className="w-full flex justify-end bg-transparent relative h-[490px] md:h-[400px]">
+        {/* Image de fond avec opacité réduite */}
         <img
           src="/small-header-banner2.png"
           alt="Header Banner"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
-        <div className="relative z-10 w-full flex flex-col items-start pt-10 pb-10">
-          <div className="p-6 ml-8 text-left">
-            <h1 className="text-5xl font-bold text-black mb-3">
+        {/* Bloc de texte */}
+        <div className="relative z-10 w-full flex flex-col items-start pt-10 md:pt-32 pb-10">
+          <div className="p-6 md:ml-8 md:text-left text-center">
+            <h1 className="md:text-5xl text-2xl font-bold text-black md:mb-3">
               HANDY CHIRURG.
             </h1>
-            <h1 className="text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="md:text-5xl text-2xl font-bold text-gray-900 md:mb-4 mb-14">
               Ihre Experten für Reparaturen.
             </h1>
-            <ul className="text-gray-800 text-sm grid grid-cols-2 gap-x-8 gap-y-1">
+            <ul className="text-gray-800 text-md grid md:grid-cols-2 md:gap-x-8 gap-y-3">
               <li className="flex items-center gap-2">
                 <i className="fa-solid fa-check"></i>
                 <span>Zertifizierte Techniker</span>
@@ -33,10 +35,16 @@ export default function Home() {
                 <span>2 Standorte deutschlandweit</span>
               </li>
             </ul>
+            {/* Bouton mobile sous la liste */}
+            <a
+              href="#"
+              className="bg-red-500 text-white mt-12 font-semibold px-5 py-3 rounded shadow hover:bg-red-700 transition mt-8 block md:hidden"
+            >
+              Reparatur einleiten
+            </a>
           </div>
         </div>
       </div>
-      */}
     </>
   );
 }
