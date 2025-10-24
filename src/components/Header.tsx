@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from "react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Standorte", href: "#" },
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
       <div className="flex items-center justify-between py-3 bg-white relative">
         {/* Logo à gauche */}
         <div className="flex-none ml-8">
-          <img src="/logo.jpg" alt="Phonecare Logo" className="h-14 w-full" />
+          <Image src="/logo.jpg" alt="Phonecare Logo" height={56} width={120} className="h-14 w-full" />
         </div>
         {/* Desktop navigation */}
         <nav className="hidden md:flex flex-1 justify-center gap-8">
@@ -68,7 +69,7 @@ const Header: React.FC = () => {
             </svg>
           </button>
           <div className="flex flex-col items-center justify-center h-full">
-            <img src="/logo.jpg" alt="Phonecare Logo" className="h-16 mb-8" />
+            <Image src="/logo.jpg" alt="Phonecare Logo" height={64} width={120} className="h-16 mb-8" />
             <nav className="flex flex-col gap-8 items-center">
               {navLinks.map(link => (
                 <a key={link.label} href={link.href} className="text-gray-800 font-medium text-2xl" onClick={() => setMenuOpen(false)}>

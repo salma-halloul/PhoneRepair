@@ -1,4 +1,5 @@
 import HeroSlider from "@/components/HeroSlider";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,10 +14,12 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Smartphone */}
           <div className="group relative flex flex-col items-center bg-white rounded-lg shadow transition cursor-pointer min-h-[170px] p-0 overflow-hidden">
-            <img
+            <Image
               src="/phone.jpg"
               alt="Smartphone"
+              fill
               className="w-full h-full object-cover opacity-80 absolute inset-0 transition duration-300 group-hover:blur-sm"
+              sizes="(max-width: 768px) 100vw, 25vw"
             />
             <span className="absolute bottom-0 left-0 w-full flex justify-center">
               <span className="backdrop-blur-md bg-white/60 px-42 py-2 rounded-t-lg font-medium text-gray-800 text-lg">
@@ -34,10 +37,12 @@ export default function Home() {
           </div>
           {/* Notebook */}
           <div className="group relative flex flex-col items-center bg-white rounded-lg shadow transition cursor-pointer min-h-[170px] p-0 overflow-hidden">
-            <img
+            <Image
               src="/notebook.jpg"
               alt="Notebook"
+              fill
               className="w-full h-full object-cover opacity-80 absolute inset-0 transition duration-300 group-hover:blur-sm"
+              sizes="(max-width: 768px) 100vw, 25vw"
             />
             <span className="absolute bottom-0 left-0 w-full flex justify-center">
               <span className="backdrop-blur-md bg-white/60 px-42 py-2 rounded-t-lg font-medium text-gray-800 text-lg">
@@ -55,10 +60,12 @@ export default function Home() {
           </div>
           {/* PC */}
           <div className="group relative flex flex-col items-center bg-white rounded-lg shadow transition cursor-pointer min-h-[170px] p-0 overflow-hidden">
-            <img
+            <Image
               src="/pc.jpg"
               alt="PC"
+              fill
               className="w-full h-full object-cover opacity-80 absolute inset-0 transition duration-300 group-hover:blur-sm"
+              sizes="(max-width: 768px) 100vw, 25vw"
             />
             <span className="absolute bottom-0 left-0 w-full flex justify-center">
               <span className="backdrop-blur-md bg-white/60 px-42 py-2 rounded-t-lg font-medium text-gray-800 text-lg">
@@ -76,10 +83,12 @@ export default function Home() {
           </div>
           {/* Tablet */}
           <div className="group relative flex flex-col items-center bg-white shadow transition cursor-pointer min-h-[170px] p-0 overflow-hidden">
-            <img
+            <Image
               src="/tablet.jpg"
               alt="Tablet"
+              fill
               className="w-full h-full object-cover opacity-80 absolute inset-0 transition duration-300 group-hover:blur-sm"
+              sizes="(max-width: 768px) 100vw, 25vw"
             />
             <span className="absolute bottom-0 left-0 w-full flex justify-center">
               <span className="backdrop-blur-md bg-white/60 px-42 py-2 rounded-t-lg font-medium text-gray-800 text-lg">
@@ -245,10 +254,12 @@ export default function Home() {
 
       {/* Datenschutz Section */}
       <div className="w-full relative p-16 flex justify-start">
-        <img
+        <Image
           src="/banner.png"
           alt="Privacy Background"
+          fill
           className="absolute inset-0 w-full h-full object-cover opacity-20"
+          sizes="100vw"
         />
         <div className="relative z-10 max-w-xl text-left">
           <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
@@ -268,38 +279,38 @@ export default function Home() {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
             <div className="flex flex-col items-center text-center">
-              <img src="/phone1.png" alt="Display Reparatur" className="w-28 h-28" />
+              <Image src="/phone1.png" alt="Display Reparatur" width={112} height={112} className="w-28 h-28" />
               <span className="font-medium text-md">Mikrofonreparatur</span>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img src="/phone2.png" alt="Akku Austausch" className="w-28 h-28" />
+              <Image src="/phone2.png" alt="Akku Austausch" width={112} height={112} className="w-28 h-28" />
               <span className="font-medium text-md">Display Reparatur</span>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img src="/tablet2.png" alt="Zuverlässige Fehlerdiagnose" className="w-28 h-28" />
+              <Image src="/tablet2.png" alt="Zuverlässige Fehlerdiagnose" width={112} height={112} className="w-28 h-28" />
               <span className="font-medium text-md">Zuverlässige Fehlerdiagnose</span>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img src="/pc.png" alt="Handy Datenrettung" className="w-28 h-28" />
+              <Image src="/pc.png" alt="Handy Datenrettung" width={112} height={112} className="w-28 h-28" />
               <span className="font-medium text-md">PC Datenrettung</span>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img src="/phone3.png" alt="Akku Austausch" className="w-28 h-28" />
+              <Image src="/phone3.png" alt="Akku Austausch" width={112} height={112} className="w-28 h-28" />
               <span className="font-medium text-md">Akku Austausch</span>
             </div>
             <div className="flex flex-col items-center text-center">
-              <img src="/phone4.png" alt="Wasserschaden Reparatur" className="w-28 h-28" />
+              <Image src="/phone4.png" alt="Wasserschaden Reparatur" width={112} height={112} className="w-28 h-28" />
               <span className="font-medium text-md">Wasserschaden Reparatur</span>
             </div>
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-2 md:gap-8">
-            <img src="/apple.png" alt="Apple" className="w-14 h-14 object-contain" />
-            <img src="/samsung.png" alt="Samsung" className="w-20 h-20 object-contain" />
-            <img src="/huawei.png" alt="Huawei" className="w-20 h-20 object-contain" />
-            <img src="/xiaomi.png" alt="Xiaomi" className="w-20 h-20 object-contain" />
-            <img src="/google.png" alt="Google" className="w-20 h-20 object-contain" />
-            <img src="/sony.png" alt="Sony" className="w-20 h-20 object-contain" />
+            <Image src="/apple.png" alt="Apple" width={56} height={56} className="w-14 h-14 object-contain" />
+            <Image src="/samsung.png" alt="Samsung" width={80} height={80} className="w-20 h-20 object-contain" />
+            <Image src="/huawei.png" alt="Huawei" width={80} height={80} className="w-20 h-20 object-contain" />
+            <Image src="/xiaomi.png" alt="Xiaomi" width={80} height={80} className="w-20 h-20 object-contain" />
+            <Image src="/google.png" alt="Google" width={80} height={80} className="w-20 h-20 object-contain" />
+            <Image src="/sony.png" alt="Sony" width={80} height={80} className="w-20 h-20 object-contain" />
           </div>
         </div>
       </div>

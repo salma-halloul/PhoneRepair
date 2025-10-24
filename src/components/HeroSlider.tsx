@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const slides = [
   {
@@ -39,9 +40,11 @@ const HeroSlider: React.FC = () => {
         }}
       >
         {slides.map((slide, idx) => (
-          <img
+          <Image
             key={idx}
             src={slide.image}
+            width={600}
+            height={600}
             alt={`Header Banner ${idx + 1}`}
             className="w-full h-full object-cover opacity-40 flex-shrink-0"
             style={{ minWidth: "100%" }}
