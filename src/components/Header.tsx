@@ -13,20 +13,20 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header>
+    <header className="fixed top-0 left-0 w-full z-50">
       {/* Mini header */}
       <div className="relative text-xs text-white border-b border-gray-200">
-        <div className="absolute inset-0 bg-[var(--primary)] bg-gradient-to-r from-[var(--primary)] via-white/50 to-[var(--primary)] opacity-90 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[var(--primary)] bg-gradient-to-r from-[var(--primary)] via-white/50 to-[var(--primary)] pointer-events-none"></div>
         <div className="relative z-10 py-3 px-4 flex items-center gap-2">
           <i className="fa-solid fa-phone"></i>
           <span>Persönliche Beratung: 0221-6776432</span>
         </div>
       </div>
       {/* Main header */}
-      <div className="flex items-center justify-between py-3 bg-white relative fixed">
+      <div className="flex items-center justify-between py-2 bg-white relative">
         {/* Logo à gauche */}
         <div className="flex-none ml-8">
-          <Image src="/logo.jpg" alt="Phonecare Logo" height={56} width={120} className="h-14 w-full" />
+          <Image src="/logo.jpg" alt="Phonecare Logo" height={56} width={120} className="h-12 w-full" />
         </div>
         {/* Desktop navigation */}
         <nav className="hidden md:flex flex-1 justify-center gap-8">
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
         <div className="hidden md:flex flex-none mr-8">
           <a
             href="#"
-            className="bg-red-500 text-white font-semibold px-5 py-3 rounded shadow hover:bg-red-700 transition"
+            className="bg-red-500 text-white font-semibold px-5 py-2 rounded shadow hover:bg-red-700 transition"
           >
             Reparatur einleiten
           </a>

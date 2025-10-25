@@ -31,7 +31,7 @@ const HeroSlider: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-end bg-transparent relative h-[490px] md:h-[400px] overflow-hidden">
+    <div className="w-full flex justify-end bg-transparent mt-26 relative h-[490px] md:h-[400px] overflow-hidden">
       {/* Images en slide horizontal */}
       <div
         className="absolute inset-0 w-full h-full flex transition-transform duration-700"

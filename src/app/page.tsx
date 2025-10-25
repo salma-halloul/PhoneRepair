@@ -391,7 +391,7 @@ export default function Home() {
       {/* Ablauf/Etappen Timeline Section */}
       <div className="w-full py-15 px-10">
         <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center">
-          So funktioniert's
+          So funktioniert&apos;s
         </h2>
         <div className="relative flex flex-col md:flex-row items-center md:items-stretch justify-between">
           {[
