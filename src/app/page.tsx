@@ -434,7 +434,91 @@ export default function Home() {
         </div>
       </div>
 
-
+      {/* Warum uns wählen Section */}
+      <div className="w-full mx-auto px-10 py-15 relative overflow-hidden">
+        {/* Image de fond avec effet rouge et transparence */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <Image
+            src="/header2.jpg"
+            alt="Warum uns wählen Hintergrund"
+            fill
+            className="object-cover opacity-10"
+            style={{ zIndex: 0 }}
+          />
+          <div className="absolute inset-0 bg-red-400 opacity-20"></div>
+        </div>
+        <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-10 text-center relative z-10">
+          Warum uns wählen?
+        </h2>
+        <ul className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <li className="flex items-start gap-5">
+            <span className="flex items-center justify-center w-26 h-14 rounded-full bg-teal-100 text-teal-600 text-2xl mt-1">
+              <i className="fa-solid fa-money-bill-wave"></i>
+            </span>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Transparente Preise</h4>
+              <p className="text-gray-700 text-sm">
+                Sie erhalten von Anfang an eine klare Information über die Reparaturkosten – keine versteckten Gebühren.
+              </p>
+            </div>
+          </li>
+          <li className="flex items-start gap-5">
+            <span className="flex items-center justify-center w-26 h-14 rounded-full bg-teal-100 text-teal-600 text-2xl mt-1">
+              <i className="fa-solid fa-warehouse"></i>
+            </span>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Großes Ersatzteillager</h4>
+              <p className="text-gray-700 text-sm">
+                Wir reparieren Ihr Gerät mit Originalteilen, die wir von allen führenden Herstellern vorrätig haben.
+              </p>
+            </div>
+          </li>
+          <li className="flex items-start gap-5">
+            <span className="flex items-center justify-center w-34 h-14 rounded-full bg-teal-100 text-teal-600 text-2xl mt-1">
+              <i className="fa-solid fa-calendar-xmark"></i>
+            </span>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Ohne Termin</h4>
+              <p className="text-gray-700 text-sm">
+                Sie können Ihr defektes Gerät jederzeit in eine unserer Filialen bringen – ganz ohne vorherige Terminvereinbarung.
+              </p>
+            </div>
+          </li>
+          <li className="flex items-start gap-5">
+            <span className="flex items-center justify-center w-26 h-14 rounded-full bg-teal-100 text-teal-600 text-2xl mt-1">
+              <i className="fa-solid fa-coins"></i>
+            </span>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Kostengünstige Reparatur</h4>
+              <p className="text-gray-700 text-sm">
+                Wir reparieren nur das, was wirklich notwendig ist – für eine faire und günstige Lösung.
+              </p>
+            </div>
+          </li>
+          <li className="flex items-start gap-5">
+            <span className="flex items-center justify-center w-26 h-14 rounded-full bg-teal-100 text-teal-600 text-2xl mt-1">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Kostenlose Fehlerdiagnose</h4>
+              <p className="text-gray-700 text-sm">
+                Ein kurzer Blick genügt, um den Fehler zu erkennen – die erste Diagnose ist für Sie kostenlos!
+              </p>
+            </div>
+          </li>
+          <li className="flex items-start gap-5">
+            <span className="flex items-center justify-center w-34 h-14 rounded-full bg-teal-100 text-teal-600 text-2xl mt-1">
+              <i className="fa-solid fa-user-graduate"></i>
+            </span>
+            <div>
+              <h4 className="font-bold text-lg mb-1">Große Fachkompetenz</h4>
+              <p className="text-gray-700 text-sm">
+                Ihr Gerät wird von erfahrenen Spezialisten repariert – unser Team kennt sich bestens mit Handys, Laptops und Tablets aus.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
     </>
   );
