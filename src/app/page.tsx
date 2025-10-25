@@ -321,7 +321,7 @@ export default function Home() {
         <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center">
           Unsere Standorte
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
           {/* Standort 1 */}
           <div className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
             <Image
@@ -335,13 +335,13 @@ export default function Home() {
             <p className="text-gray-800 text-sm mb-2">
               Otto-Suhr-Allee 39, 10585 Berlin, Deutschland
             </p>
-            <div className="flex gap-4 w-full mt-2">
+            <div className="flex flex-col md:flex-row gap-4 w-full mt-2">
               <a
                 href="tel:+493046995517"
                 className="bg-teal-500 text-white font-semibold px-5 py-2 rounded shadow hover:bg-teal-700 transition w-full flex items-center justify-center"
               >
                 <i className="fa-solid fa-phone mr-2"></i>
-                +493046995517
+                +49 30 46995517
               </a>
               <a
                 href="https://www.google.com/maps/place/HANDY+CHIRURG/@52.51465,13.3142702,17z/data=!4m15!1m8!3m7!1s0x47a8513cb69cc529:0x70b375cebabe786a!2sHANDY+CHIRURG!8m2!3d52.51465!4d13.3142702!10e1!16s%2Fg%2F11pz28pydv!3m5!1s0x47a8513cb69cc529:0x70b375cebabe786a!8m2!3d52.51465!4d13.3142702!16s%2Fg%2F11pz28pydv?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
@@ -367,13 +367,13 @@ export default function Home() {
             <p className="text-gray-700 text-sm mb-2">
               Dortustraße 23, 14467 Potsdam, Deutschland
             </p>
-            <div className="flex gap-4 w-full mt-2">
+            <div className="flex flex-col md:flex-row gap-4 w-full mt-2">
               <a
                 href="tel:+4933129080953"
                 className="bg-teal-500 text-white font-semibold px-5 py-2 rounded shadow hover:bg-teal-700 transition w-full flex items-center justify-center"
               >
                 <i className="fa-solid fa-phone mr-2"></i>
-                +4933129080953
+                +49 331 29080953
               </a>
               <a
                 href="https://www.google.com/maps/place/Handy+Chirurg+Potsdam/@52.3997074,13.0531279,17.25z/data=!4m6!3m5!1s0x47a8f5923a5c2a67:0x81abff878300550!8m2!3d52.39961!4d13.0531501!16s%2Fg%2F11txtydphy?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
