@@ -520,6 +520,16 @@ export default function Home() {
         </ul>
       </div>
 
+      {/* Google Reviews Section */}
+      <div className="w-full py-20 px-10">
+        <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
+          Kundenbewertungen
+        </h2>
+        <div id="reviews-widget-658"></div>
+        <script src="https://app.reviewconnect.me/embed/4iopQ7q35uDp8y1AZNFCJMDMtwollL92/widget.js" async></script>
+
+      </div>
+
     </>
   );
 }
