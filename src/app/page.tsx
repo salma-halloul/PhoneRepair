@@ -1,8 +1,64 @@
+"use client"
 import HeroSlider from "@/components/HeroSlider";
 import ReviewConnectWidget from "@/components/ReviewConnectWidget";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+
+  const faqs = [
+
+    {
+      question: "Wann habt ihr geöffnet?",
+      answer: (
+        <>
+          <strong>Berlin (Otto-Suhr-Allee 39):</strong><br />
+          Montag–Freitag: 10:00–20:00<br />
+          Samstag: 10:00–18:00<br />
+          Sonntag: Geschlossen<br /><br />
+          <strong>Potsdam (Dortustraße 23):</strong><br />
+          Montag–Freitag: 10:00–18:30<br />
+          Samstag: 10:00–18:00<br />
+          Sonntag: Geschlossen
+        </>
+      ),
+    },
+    {
+      question: "Welche Zahlungsarten akzeptiert ihr?",
+      answer:
+        "Du kannst bei uns per Banküberweisung, PayPal, Kreditkarte (VISA, Mastercard, American Express), Sofort-Überweisung, Giropay oder bar bezahlen.",
+    },
+    {
+      question: "Ich weiß nicht, was an meinem Gerät defekt ist. Was soll ich tun?",
+      answer:
+        "Kein Problem! Ruf uns einfach an und schildere die Symptome. Wir geben dir eine kostenlose Erstdiagnose und Einschätzung.",
+    },
+    {
+      question: "Mein Defekt ist nicht auf eurer Liste. Könnt ihr trotzdem helfen?",
+      answer:
+        "Natürlich! Wir finden für jedes Problem eine Lösung, auch wenn es nicht explizit aufgeführt ist.",
+    },
+    {
+      question: "Verwendet ihr Original-Ersatzteile?",
+      answer:
+        "Für die meisten Smartphones haben wir Originalteile auf Lager und reparieren nach Herstellervorgaben. Für einige Modelle bieten wir auch günstigere Alternativen von Zweit-Herstellern an.",
+    },
+    {
+      question: "Lohnt sich eine Reparatur immer?",
+      answer:
+        "Meistens ja. Nach der kostenlosen Erstdiagnose erfährst du die Kosten und kannst selbst entscheiden, ob sich die Reparatur für dich lohnt.",
+    },
+    {
+      question: "Bekomme ich eine Rechnung für die Reparatur?",
+      answer:
+        "Selbstverständlich! Du erhältst für jede Reparatur eine Rechnung.",
+    },
+  ];
+
+  // FAQ state
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [showContact, setShowContact] = useState(false);
+
   return (
     <>
       <HeroSlider />
@@ -527,6 +583,38 @@ export default function Home() {
           Kundenbewertungen
         </h2>
         <ReviewConnectWidget />
+      </div>
+
+      {/* FAQ Section */}
+      <div className="w-full bg-gray-100 py-16 px-4">
+        <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center">
+          Häufig gestellte Fragen
+        </h2>
+        <div className="space-y-4 max-w-5xl mx-auto">
+          {faqs.map((faq, idx) => (
+            <div key={idx} className="border rounded-lg bg-white shadow">
+              <button
+                className="w-full text-left px-6 py-4 font-semibold text-gray-800 flex justify-between items-center focus:outline-none"
+                onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                aria-expanded={openFaq === idx}
+                aria-controls={`faq-answer-${idx}`}
+              >
+                <span>{faq.question}</span>
+                <span className="ml-4 text-xl">
+                  {openFaq === idx ? "−" : "+"}
+                </span>
+              </button>
+              {openFaq === idx && (
+                <div
+                  id={`faq-answer-${idx}`}
+                  className="px-6 pb-4 text-gray-700 animate-fade-in"
+                >
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
     </>
