@@ -454,22 +454,22 @@ export default function Home() {
           {[
             {
               icon: "fa-envelope-open-text",
-              title: "1. Anfrage senden oder anrufen",
+              title: "Anfrage senden oder anrufen",
               desc: "Senden Sie eine Reparaturanfrage oder kontaktieren Sie uns telefonisch.",
             },
             {
               icon: "fa-file-invoice-dollar",
-              title: "2. Preisabschätzung erhalten",
+              title: "Preisabschätzung erhalten",
               desc: "Sie erhalten von uns eine unverbindliche Preisabschätzung für Ihre Reparatur.",
             },
             {
               icon: "fa-shop",
-              title: "3. Gerät vorbeibringen oder zusenden",
+              title: "Gerät vorbeibringen oder zusenden",
               desc: "Bringen Sie Ihr Gerät in unseren Shop oder senden Sie es uns per Post zu.",
             },
             {
               icon: "fa-screwdriver-wrench",
-              title: "4. Reparatur & Abholung",
+              title: "Reparatur & Abholung",
               desc: "Ihr Gerät wird repariert und Sie können es wieder abholen oder erhalten es zurückgesendet.",
             },
           ].map((step, idx, arr) => (
@@ -584,6 +584,32 @@ export default function Home() {
         </h2>
         <ReviewConnectWidget />
       </div>
+
+      {/* Banner Call Section 
+      <div className="w-full relative flex items-center bg-primary">
+        <div className="flex-1 flex items-center justify-start px-10 z-10 relative">
+          <span className="text-white text-2xl font-bold mr-6 drop-shadow-lg">
+            Rufen Sie uns an und erhalten Sie jetzt ein kostenloses Angebot
+          </span>
+          <a
+            href="tel:+493046995517"
+            className="bg-red-500 text-white font-bold px-8 py-3 rounded-md shadow-lg text-md hover:bg-red-700 ml-9 whitespace-nowrap"
+          >
+            Jetzt anrufen
+          </a>
+        </div>
+        <div className="flex-1 h-full relative min-h-[260px]">
+          <Image
+            src="/banner4.png"
+            alt="Banner Call"
+            fill
+            className="object-cover opacity-30"
+            priority
+            style={{ objectPosition: "right" }}
+          />
+        </div>
+      </div>
+      */}
 
       {/* FAQ Section */}
       <div className="w-full bg-gray-100 py-16 px-4">

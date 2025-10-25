@@ -29,9 +29,9 @@ const Header: React.FC = () => {
           <Image src="/logo.jpg" alt="Phonecare Logo" height={56} width={120} className="h-12 w-full" />
         </div>
         {/* Desktop navigation */}
-        <nav className="hidden md:flex flex-1 justify-center gap-8">
+        <nav className="hidden md:flex flex-1 justify-center gap-2 lg:gap-8">
           {navLinks.map(link => (
-            <a key={link.label} href={link.href} className="no-underline text-gray-800 font-medium">
+            <a key={link.label} href={link.href} className="no-underline text-gray-800 lg:text-md text-sm font-medium">
               {link.label}
             </a>
           ))}

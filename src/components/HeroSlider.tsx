@@ -52,7 +52,7 @@ const HeroSlider: React.FC = () => {
         ))}
       </div>
       {/* Bloc de texte */}
-      <div className="relative z-10 w-full flex flex-col items-start pt-10 md:pt-32 pb-10">
+      <div className="relative z-10 w-full flex flex-col items-start pt-10 lg:pt-32 md:pt-24 pb-10">
         <div className="p-6 md:ml-8 md:text-left text-center">
           <h1 className="md:text-5xl text-2xl font-bold text-black md:mb-3">
             {slides[current].title}
