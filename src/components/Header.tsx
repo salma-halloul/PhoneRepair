@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       {/* Main header */}
-      <div className="flex items-center justify-between py-3 bg-white relative">
+      <div className="flex items-center justify-between py-3 bg-white relative fixed">
         {/* Logo à gauche */}
         <div className="flex-none ml-8">
           <Image src="/logo.jpg" alt="Phonecare Logo" height={56} width={120} className="h-14 w-full" />

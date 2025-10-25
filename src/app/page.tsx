@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <HeroSlider/>
+      <HeroSlider />
 
       {/* Section Gerät auswählen */}
       <div className="w-full max-w-4xl mx-auto px-4 p-10">
@@ -159,8 +159,8 @@ export default function Home() {
 
 
       {/* Services Section */}
-      <div className="w-full mx-auto p-10">
-        <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center">
+      <div className="w-full mx-auto py-15 px-10">
+        <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-10 text-center">
           Was wir reparieren & anbieten
         </h2>
         {/* Services grid 2x2 */}
@@ -173,7 +173,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">REPARATUR BERATUNG</h3>
+              <h3 className="font-bold md:text-lg text-md mb-2">REPARATUR BERATUNG</h3>
               <p className="text-gray-700 text-sm">
                 Wir beraten Sie kompetent zu allen Reparaturmöglichkeiten für Ihr Gerät und finden gemeinsam die beste Lösung.
               </p>
@@ -187,7 +187,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">ANKAUF / VERKAUF</h3>
+              <h3 className="font-bold  md:text-lg text-md mb-2">ANKAUF / VERKAUF</h3>
               <p className="text-gray-700 text-sm">
                 Wir kaufen Ihr altes Gerät an oder bieten Ihnen geprüfte, gebrauchte Geräte zu attraktiven Preisen an.
               </p>
@@ -201,7 +201,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">HANDY-ZUBEHÖR</h3>
+              <h3 className="font-bold  md:text-lg text-md mb-2">HANDY-ZUBEHÖR</h3>
               <p className="text-gray-700 text-sm">
                 Entdecken Sie unser großes Sortiment an hochwertigem Zubehör für Ihr Smartphone, Tablet oder Notebook.
               </p>
@@ -215,7 +215,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">PANZER-FOLIEN</h3>
+              <h3 className="font-bold  md:text-lg text-md mb-2">PANZER-FOLIEN</h3>
               <p className="text-gray-700 text-sm">
                 Wir bieten professionelle Anbringung von Panzer-Folien für optimalen Schutz Ihres Displays – direkt vor Ort.
               </p>
@@ -229,7 +229,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">DATENRETTUNG</h3>
+              <h3 className="font-bold  md:text-lg text-md mb-2">DATENRETTUNG</h3>
               <p className="text-gray-700 text-sm">
                 Wir retten Ihre wichtigen Daten von defekten oder beschädigten Geräten – schnell, sicher und zuverlässig.
               </p>
@@ -243,7 +243,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-2">SOFTWARE-SERVICE</h3>
+              <h3 className="font-bold  md:text-lg text-md mb-2">SOFTWARE-SERVICE</h3>
               <p className="text-gray-700 text-sm">
                 Wir unterstützen Sie bei Software-Problemen, Updates, Virenentfernung und Systemoptimierung für Ihre Geräte.
               </p>
@@ -272,9 +272,9 @@ export default function Home() {
       </div>
 
       {/* Häufige Reparaturleistungen Section */}
-      <div className="w-full bg-white relative overflow-hidden p-10">
+      <div className="w-full bg-white relative overflow-hidden pb-10 pt-15 px-10">
         <div className=" relative z-10">
-          <h3 className="text-lg md:text-2xl font-bold text-center mb-8">
+          <h3 className="text-lg md:text-2xl font-bold text-center mb-9">
             Häufige Reparaturleistungen
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
@@ -315,9 +315,8 @@ export default function Home() {
         </div>
       </div>
 
-
       {/* Unsere Standorte Section */}
-      <div className="w-full bg-teal-50 mx-auto p-10">
+      <div className="w-full mx-auto px-10 py-15 bg-teal-50">
         <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center">
           Unsere Standorte
         </h2>
@@ -344,7 +343,7 @@ export default function Home() {
                 +49 30 46995517
               </a>
               <a
-                href="https://www.google.com/maps/place/HANDY+CHIRURG/@52.51465,13.3142702,17z/data=!4m15!1m8!3m7!1s0x47a8513cb69cc529:0x70b375cebabe786a!2sHANDY+CHIRURG!8m2!3d52.51465!4d13.3142702!10e1!16s%2Fg%2F11pz28pydv!3m5!1s0x47a8513cb69cc529:0x70b375cebabe786a!8m2!3d52.51465!4d13.3142702!16s%2Fg%2F11pz28pydv?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/HANDY+CHIRURG/@52.51465,13.3142702,17z/data=!4m15!1m8!3m7!1s0x47a8513cb69cc529:0x70b375cebabe786a!2sHANDY+CHIRURG!8m2!3d52.51465!4d13.3142702!10e1!16s%2Fg%2F11pz28pydv!3m5!1s0x47a8513cb69cc529:0x70b375cebabe786a!8m2!3d52.51465!4d13.3142702!16s%2Fg%2F11pz28pydv?entry=ttu&g_ep=EgoyMDI1TAoyMC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-red-500 text-white font-semibold px-5 py-2 rounded shadow hover:bg-red-700 transition w-full flex items-center justify-center"
@@ -376,7 +375,7 @@ export default function Home() {
                 +49 331 29080953
               </a>
               <a
-                href="https://www.google.com/maps/place/Handy+Chirurg+Potsdam/@52.3997074,13.0531279,17.25z/data=!4m6!3m5!1s0x47a8f5923a5c2a67:0x81abff878300550!8m2!3d52.39961!4d13.0531501!16s%2Fg%2F11txtydphy?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Handy+Chirurg+Potsdam/@52.3997074,13.0531279,17.25z/data=!4m6!3m5!1s0x47a8f5923a5c2a67:0x81abff878300550!8m2!3d52.39961!4d13.0531501!16s%2Fg%2F11txtydphy?entry=ttu&g_ep=EgoyMDI1TAoyMC4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-red-500 text-white font-semibold px-5 py-2 rounded shadow hover:bg-red-700 transition w-full flex items-center justify-center"
@@ -388,6 +387,54 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Ablauf/Etappen Timeline Section */}
+      <div className="w-full py-15 px-10">
+        <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-8 text-center">
+          So funktioniert's
+        </h2>
+        <div className="relative flex flex-col md:flex-row items-center md:items-stretch justify-between">
+          {[
+            {
+              icon: "fa-envelope-open-text",
+              title: "1. Anfrage senden oder anrufen",
+              desc: "Senden Sie eine Reparaturanfrage oder kontaktieren Sie uns telefonisch.",
+            },
+            {
+              icon: "fa-file-invoice-dollar",
+              title: "2. Preisabschätzung erhalten",
+              desc: "Sie erhalten von uns eine unverbindliche Preisabschätzung für Ihre Reparatur.",
+            },
+            {
+              icon: "fa-shop",
+              title: "3. Gerät vorbeibringen oder zusenden",
+              desc: "Bringen Sie Ihr Gerät in unseren Shop oder senden Sie es uns per Post zu.",
+            },
+            {
+              icon: "fa-screwdriver-wrench",
+              title: "4. Reparatur & Abholung",
+              desc: "Ihr Gerät wird repariert und Sie können es wieder abholen oder erhalten es zurückgesendet.",
+            },
+          ].map((step, idx, arr) => (
+            <div key={idx} className="flex-1 flex flex-col items-center text-center relative px-2">
+              {/* Timeline connector between numbers */}
+              {idx !== arr.length - 1 && (
+                <div className="hidden md:block absolute top-8 left-1/2 transform -translate-x-0 w-full h-1 bg-red-200 z-0"></div>
+              )}
+              {/* Timeline number in square */}
+              <div className="relative z-10">
+                <span className="w-16 h-16 rounded-lg bg-red-500 flex items-center justify-center text-white mb-4 mx-auto border-4 border-red-100 text-3xl font-extrabold">
+                  {idx + 1}
+                </span>
+              </div>
+              <h4 className="font-bold text-xl mb-2">{step.title}</h4>
+              <p className="text-gray-700 text-md md:mb-0 mb-7">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
 
     </>
   );
