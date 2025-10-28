@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "Standorte", href: "#" },
+  { label: "Standorte", href: "/location" },
   { label: "Dienstleistungen", href: "#" },
   { label: "Über uns", href: "#" },
   { label: "Kontakt", href: "#" },
