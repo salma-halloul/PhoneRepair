@@ -57,7 +57,6 @@ export default function Home() {
 
   // FAQ state
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [showContact, setShowContact] = useState(false);
 
   return (
     <>
