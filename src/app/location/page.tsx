@@ -27,7 +27,7 @@ export default function Location() {
           />
         </div>
         {/* Texte + bouton centré verticalement mais aligné à gauche */}
-        <div className="md:w-1/3 w-full flex flex-col items-start justify-center px-8 py-3">
+        <div className="md:w-1/3 w-full flex flex-col items-center md:items-start md:text-left text-center px-8 py-3">
           <h2 className="font-bold text-xl md:text-2xl text-gray-900 mb-2">
             Berlin
           </h2>
@@ -81,7 +81,7 @@ export default function Location() {
           />
         </div>
         {/* Texte + bouton centré verticalement mais aligné à gauche */}
-        <div className="md:w-1/3 w-full flex flex-col items-start justify-center px-8 py-3">
+        <div className="md:w-1/3 w-full flex flex-col items-center md:items-start md:text-left text-center px-8 py-3">
           <h2 className="font-bold text-xl md:text-2xl text-gray-900 mb-2 text-center">
             Potsdam
           </h2>
