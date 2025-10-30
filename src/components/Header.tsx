@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Standorte", href: "/location" },
   { label: "Dienstleistungen", href: "#" },
   { label: "Über uns", href: "#" },
-  { label: "Kontakt", href: "#" },
+  { label: "Kontakt", href: "/contact" },
 ];
 
 const Header: React.FC = () => {
