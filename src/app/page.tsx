@@ -618,30 +618,28 @@ export default function Home() {
         </div>
       </div>
 
-       {/* Banner Call Section  */}
-      <div className="w-full relative flex items-center bg-primary">
-        <div className="flex-1 flex items-center justify-start px-10 z-10 relative">
-          <span className="text-white text-2xl font-bold mr-6 drop-shadow-lg">
+      {/* Banner Call Section  */}
+      <div className="w-full relative flex items-center min-h-[150px]">
+        <Image
+          src="/image1.png"
+          alt="Banner Call"
+          fill
+          className="absolute inset-0 object-cover"
+          priority
+        />
+        <div className="flex-1 flex flex-col items-center gap-4 px-10 z-10 relative">
+          <span className="text-white lg:text-2xl md:text-md text-xs font-bold mr-6 drop-shadow-lg text-center">
             Rufen Sie uns an und erhalten Sie jetzt ein kostenloses Angebot
           </span>
           <a
             href="tel:+493046995517"
-            className="bg-red-500 text-white font-bold px-8 py-3 rounded-md shadow-lg text-md hover:bg-red-700 ml-9 whitespace-nowrap"
+            className="bg-red-500 text-white font-bold px-8 py-3 rounded-md shadow-lg lg:text-md text-sm text-xs hover:bg-red-700"
           >
             Jetzt anrufen
           </a>
         </div>
-        <div className="flex-1 h-full relative min-h-[150px]">
-          <Image
-            src="/banner4.png"
-            alt="Banner Call"
-            fill
-            className="object-cover opacity-30"
-            priority
-            style={{ objectPosition: "right" }}
-          />
-        </div>
       </div>
+
 
     </>
   );
