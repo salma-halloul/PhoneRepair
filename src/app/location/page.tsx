@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Location() {
   return (
-    <div className="w-full mx-auto px-10 py-20 mt-24">
+    <div className="w-full mx-auto px-10 py-12 mt-24">
       {/* Introduction */}
       <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">
         Unsere Standorte

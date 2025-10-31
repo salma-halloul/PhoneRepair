@@ -24,7 +24,7 @@ export default function Contact() {
 
     return (
 
-        <div className="w-full mt-24 lg:px-10 px-4 py-16">
+        <div className="w-full mt-24 lg:px-10 px-4 py-12">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">
                 Kontaktieren Sie uns
             </h1>

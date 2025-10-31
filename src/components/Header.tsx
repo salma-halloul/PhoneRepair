@@ -5,8 +5,8 @@ import Link from "next/link"; // Added import
 
 const navLinks = [
   { label: "Standorte", href: "/location" },
-  { label: "Dienstleistungen", href: "#" },
-  { label: "Über uns", href: "#" },
+  { label: "Preise", href: "#" },
+  { label: "Über uns", href: "/ueber-uns" },
   { label: "Kontakt", href: "/contact" },
 ];
 

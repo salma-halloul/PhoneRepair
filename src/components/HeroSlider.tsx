@@ -4,17 +4,17 @@ import Image from "next/image";
 
 const slides = [
   {
-    image: "/small-header-banner.png",
+    image: "/banner111.jpg",
     title: "HANDY CHIRURG.",
     subtitle: "Ihre Experten für Reparaturen.",
   },
   {
-    image: "/header2.png",
+    image: "/banner222.png",
     title: "Express Service.",
     subtitle: "Reparatur in weniger als 1 Stunde.",
   },
   {
-    image: "/header3.png",
+    image: "/banner33.jpg",
     title: "Originalteile Garantie.",
     subtitle: "Nur geprüfte Ersatzteile für Ihr Gerät.",
   },
@@ -40,15 +40,22 @@ const HeroSlider: React.FC = () => {
         }}
       >
         {slides.map((slide, idx) => (
-          <Image
+          <div
             key={idx}
-            src={slide.image}
-            width={600}
-            height={600}
-            alt={`Header Banner ${idx + 1}`}
-            className="w-full h-full object-cover opacity-40 flex-shrink-0"
+            className="relative w-full h-full flex-shrink-0"
             style={{ minWidth: "100%" }}
-          />
+          >
+            <Image
+              src={slide.image}
+              width={600}
+              height={600}
+              alt={`Header Banner ${idx + 1}`}
+              className="w-full h-full object-cover opacity-30"
+              style={{ minWidth: "100%" }}
+            />
+            {/* Overlay couleur primaire */}
+            <div className="absolute inset-0 w-full h-full bg-primary opacity-20 pointer-events-none" />
+          </div>
         ))}
       </div>
       {/* Bloc de texte */}
